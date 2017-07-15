@@ -1,0 +1,7 @@
+{
+   "id" : "move_menu_items",
+   "version" : "1.0",
+   "description" : "Move menu items from one menu to another menu",
+   "categories" : ["menu"],
+   "compatible_from" : "2017.3.13"
+}
