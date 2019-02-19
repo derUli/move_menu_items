@@ -20,8 +20,8 @@
 					<?php
 					foreach ( $menus as $menu ) {
 						?>
-					<option value="<?php echo $menu?>">
-					<?php echo $menu?>
+					<option value="<?php esc($menu);?>">
+					<?php translate($menu);?>
 					</option>
 					<?php
 					}
@@ -34,8 +34,8 @@
 					
 					foreach ( $menus as $menu ) {
 						?>
-					<option value="<?php echo $menu?>">
-					<?php echo $menu?>
+					<option value="<?php esc($menu);?>">
+					<?php translate($menu);?>
 					</option>
 					<?php
 					}
@@ -44,7 +44,7 @@
 
 	</p>
 	<p>
-		<input type="submit" value="<?php translate("move");?>">
+		<button type="submit" class="btn btn-primary"><i class="fas fa-arrows-alt-h"></i> <?php translate("move");?></button>
 	</p>
 	<?php csrf_token_html();?>
 </form>
